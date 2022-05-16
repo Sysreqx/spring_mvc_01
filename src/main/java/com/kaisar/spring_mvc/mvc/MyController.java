@@ -10,4 +10,14 @@ public class MyController {
     public String showMyView(){
         return "myView";
     }
+
+    @RequestMapping("/askDetails")
+    public String askEmpDetails() {
+        return "askDetails";
+    }
+
+    @RequestMapping("/showDetails")
+    public String showEmpDetails() {
+        return "showDetails";
+    }
 }
