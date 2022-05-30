@@ -12,7 +12,8 @@
 </head>
 <body>
 
-<p>Your name: ${param.empName}</p>
+<%--<p>Your name: ${param.empName}</p>--%>
+<p>Your name: ${nameAttribute}</p>
 
 </body>
 </html>
