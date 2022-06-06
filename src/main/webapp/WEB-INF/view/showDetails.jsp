@@ -13,7 +13,8 @@
 <body>
 
 <%--<p>Your name: ${param.empName}</p>--%>
-<p>Your name: ${nameAttribute}</p>
-
+<p>Your name: ${employee.name}</p>
+<p>Your surname ${employee.surname}</p>
+<p>Your salary ${employee.salary}</p>
 </body>
 </html>
