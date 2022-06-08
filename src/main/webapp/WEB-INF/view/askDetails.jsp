@@ -12,11 +12,11 @@
 
 <form:form action="showDetails" modelAttribute="employee">
 
-    Name <form:input path="name"/>
+    Name <form:input path="name" />
     <br><br>
-    Surname <form:input path="surname"></form:input>
+    Surname <form:input path="surname" />
     <br><br>
-    Salary <form:input path="salary"></form:input>
+    Salary <form:input path="salary" />
     <br><br>
 <%--    Department <form:select path="department">--%>
 <%--    <form:option value="Information Technology" label="IT"/>--%>
@@ -25,9 +25,11 @@
 <%--    </form:select>--%>
 <%--    <br><br>--%>
     Department2 <form:select path="department">
-    <form:options items="${employee.departments}"></form:options>
+    <form:options items="${employee.departments}" />
     </form:select>
     <br><br>
+    Which car do you want?
+    <form:radiobuttons path="carBrand" items="${employee.carBrands}" />
 
     <input type="submit" value="OK">
 
