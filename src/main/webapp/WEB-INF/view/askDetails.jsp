@@ -16,6 +16,7 @@
     <form:errors path="name" />
     <br><br>
     Surname <form:input path="surname" />
+    <form:errors path="surname" />
     <br><br>
     Salary <form:input path="salary" />
     <br><br>
@@ -32,8 +33,19 @@
     Which car do you want?
     <form:radiobuttons path="carBrand" items="${employee.carBrands}" />
 
-    <input type="submit" value="OK">
+    <div>
+        Phone number <form:input path="phoneNumber" />
+        <form:errors path="phoneNumber" />
+    </div>
 
+    <div>
+        Email <form:input path="email" />
+        <form:errors path="email" />
+    </div>
+
+    <div>
+        <input type="submit" value="OK">
+    </div>
 </form:form>
 
 </body>

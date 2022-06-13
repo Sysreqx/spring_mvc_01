@@ -18,5 +18,7 @@
 <p>Your salary ${employee.salary}</p>
 <p>Your deparment ${employee.department}</p>
 <p>Your car ${employee.carBrand}</p>
+<p>Phone number ${employee.phoneNumber}</p>
+<p>Email ${employee.email}</p>
 </body>
 </html>
