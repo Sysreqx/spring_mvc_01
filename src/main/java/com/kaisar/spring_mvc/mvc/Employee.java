@@ -1,10 +1,14 @@
 package com.kaisar.spring_mvc.mvc;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Employee {
+    @Size(min = 2, message = "must be min 2 sybmols")
     private String name;
+    @NotBlank(message = "surname is required field")
     private String surname;
     private int salary;
     private String department;
